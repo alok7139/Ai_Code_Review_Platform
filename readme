@@ -1,0 +1,52 @@
+🧠 AI Code Review App (MERN Stack + Gemini API)
+This is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows users to write, review, and get AI-generated feedback on their code. It leverages Google's Gemini LLM API to provide intelligent and contextual code reviews, optimization suggestions, and improvement tips.
+
+🔍 Features
+📝 Live Code Editor (JavaScript syntax highlighting)
+
+🤖 AI-Powered Code Review using Google Gemini
+
+📈 Real-time suggestions for:
+
+Code optimization
+
+Best practices
+
+Readability improvements
+
+📦 Clean and modular backend with RESTful API
+
+🌐 Environment variable support for secure API key integration
+
+🧪 Tech Stack
+Frontend: React.js, Tailwind CSS, PrismJS, React Simple Code Editor
+
+Backend: Node.js, Express.js
+
+AI: Google Gemini API (gemini-2.0-flash)
+
+Hosting Ready: Easily deployable to platforms like Render, Vercel, or Heroku
+
+🔑 How It Works
+The user writes or pastes JavaScript code into the editor.
+
+On clicking "Review", the code is sent to the backend via Axios.
+
+The backend forwards the code as a prompt to the Gemini LLM.
+
+The LLM returns a natural language review, which is rendered on the UI using Markdown.
+
+📁 .env File Example
+env
+Copy
+Edit
+VITE_BACKEND_URL=http://localhost:5000
+GOOGLE_GEMINI_KEY=your_api_key_here
+🚀 Future Enhancements
+Add support for multiple languages (Python, Java, etc.)
+
+Store and view past reviews in the database
+
+Improve prompt engineering for more actionable suggestions
+
+User authentication and personalization
