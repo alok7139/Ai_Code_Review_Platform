@@ -1,52 +1,70 @@
-🧠 AI Code Review App (MERN Stack + Gemini API)
-This is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows users to write, review, and get AI-generated feedback on their code. It leverages Google's Gemini LLM API to provide intelligent and contextual code reviews, optimization suggestions, and improvement tips.
+# 🌐 Code Review – Connect Locally, Impact Globally
 
-🔍 Features
-📝 Live Code Editor (JavaScript syntax highlighting)
+Code Review is a full-stack MERN (MongoDB, Express, React, Node.js) application that allows users to **share and review code** using AI-powered insights. Built with seamless collaboration in mind, it integrates **Google Gemini LLM API** to generate intelligent code reviews, suggestions, and optimizations.
 
-🤖 AI-Powered Code Review using Google Gemini
+---
 
-📈 Real-time suggestions for:
+## 🚀 Features
 
-Code optimization
+- 🔍 **Live Code Editor** – Built with `react-simple-code-editor` and syntax highlighting using PrismJS.
+- 🤖 **AI Code Review** – Google Gemini API provides detailed feedback and suggestions.
+- 🧠 **LLM Integration** – Prompt-based code evaluation using generative AI.
+- 🌙 **Responsive UI** – Clean interface styled with modern CSS for all screen sizes.
+- 🗂️ **MERN Stack** – Scalable and robust backend with Express + MongoDB.
 
-Best practices
+---
 
-Readability improvements
+## 🛠️ Tech Stack
 
-📦 Clean and modular backend with RESTful API
+- **Frontend**: React.js, PrismJS, React Simple Code Editor
+- **Backend**: Node.js, Express.js, MongoDB
+- **AI**: Google Gemini API
+- **Others**: Axios, dotenv
 
-🌐 Environment variable support for secure API key integration
+---
 
-🧪 Tech Stack
-Frontend: React.js, Tailwind CSS, PrismJS, React Simple Code Editor
+## 📦 Installation
 
-Backend: Node.js, Express.js
+```bash
+# Clone the repository
+git clone # 🌐 LocalLink – Connect Locally, Impact Globally
 
-AI: Google Gemini API (gemini-2.0-flash)
+LocalLink is a full-stack MERN (MongoDB, Express, React, Node.js) application that allows users to **share and review code** using AI-powered insights. Built with seamless collaboration in mind, it integrates **Google Gemini LLM API** to generate intelligent code reviews, suggestions, and optimizations.
 
-Hosting Ready: Easily deployable to platforms like Render, Vercel, or Heroku
+---
 
-🔑 How It Works
-The user writes or pastes JavaScript code into the editor.
+## 🚀 Features
 
-On clicking "Review", the code is sent to the backend via Axios.
+- 🔍 **Live Code Editor** – Built with `react-simple-code-editor` and syntax highlighting using PrismJS.
+- 🤖 **AI Code Review** – Google Gemini API provides detailed feedback and suggestions.
+- 🧠 **LLM Integration** – Prompt-based code evaluation using generative AI.
+- 🌙 **Responsive UI** – Clean interface styled with modern CSS for all screen sizes.
+- 🗂️ **MERN Stack** – Scalable and robust backend with Express + MongoDB.
 
-The backend forwards the code as a prompt to the Gemini LLM.
+---
 
-The LLM returns a natural language review, which is rendered on the UI using Markdown.
+## 🛠️ Tech Stack
 
-📁 .env File Example
-env
-Copy
-Edit
-VITE_BACKEND_URL=http://localhost:5000
-GOOGLE_GEMINI_KEY=your_api_key_here
-🚀 Future Enhancements
-Add support for multiple languages (Python, Java, etc.)
+- **Frontend**: React.js, PrismJS, React Simple Code Editor
+- **Backend**: Node.js, Express.js, MongoDB
+- **AI**: Google Gemini API
+- **Others**: Axios, dotenv
 
-Store and view past reviews in the database
+---
 
-Improve prompt engineering for more actionable suggestions
+## 📦 Installation
 
-User authentication and personalization
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/locallink.git
+
+# Create .env file
+touch .env
+.git
+cd client
+
+# Install dependencies
+npm install
+
+# Create .env file
+touch .env
