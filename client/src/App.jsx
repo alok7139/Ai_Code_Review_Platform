@@ -8,6 +8,7 @@ import Editor from 'react-simple-code-editor'
 import Markdown from "react-markdown"
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 import axios from 'axios'
+import rehypeHighlight from "rehype-highlight";
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   const [prompt, setprompt] = useState( `function sum(){
   return 1+1; }`)
 
-  const [review, setreview] = useState(``)
+  const [review, setreview] = useState('')
 
   useEffect(() => {
     prism.highlightAll();
@@ -54,7 +55,9 @@ function App() {
           <div onClick={reviewcode} className="reviewbtn">Review</div>
         </div>
         <div className="right">
-         <Markdown> {review}</Markdown>
+         <Markdown rehypePlugins={[rehypeHighlight]}>{review?.toString()}</Markdown>
+
+         {/* {review} */}
         </div>
       </main>
     </>
